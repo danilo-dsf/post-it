@@ -1,8 +1,10 @@
+import 'reflect-metadata';
 import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
 import AppError from '@shared/errors/AppError';
 import '@shared/infra/typeorm';
+import '@shared/container';
 
 const app = express();
 

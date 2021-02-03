@@ -23,6 +23,10 @@ export default class CreateTableUsers1610653302754
             type: 'varchar',
           },
           {
+            name: 'status',
+            type: 'varchar',
+          },
+          {
             name: 'phone',
             type: 'varchar',
             isNullable: true,

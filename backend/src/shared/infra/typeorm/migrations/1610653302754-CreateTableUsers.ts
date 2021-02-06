@@ -37,7 +37,11 @@ export default class CreateTableUsers1610653302754
           },
           {
             name: 'password',
-            type: 'timestamp',
+            type: 'varchar',
+          },
+          {
+            name: 'avatar',
+            type: 'varchar',
           },
           {
             name: 'created_at',

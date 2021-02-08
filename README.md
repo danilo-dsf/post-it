@@ -33,6 +33,29 @@
   </li>
 </p>
 <br>
+
+<hr>
+
+<h2>Rotas da API</h2>
+
+<li><code>POST /users</code> Faz a criação de um novo usuário. Deve ser passado um JSON no corpo da requisição com os dados <code>name, email, phone, birthdate e password</code></li>
+
+<li><code>PATCH /users/avatar</code> Faz o upload da foto de perfil do usuário passando o arquivo de imagem no parâmetro <code>avatar</code></li>
+
+<li><code>POST /sessions</code> Faz o login do usuário quando informados, no corpo da requisição, o <code>email e password</code></li>
+
+<li><code>POST /password/forgot</code> Faz o envio do e-mail de recuperação de senha para o endereço informado no corpo da requisição (parâmetro <code>email</code>)</li>
+
+<li><code>POST /password/reset</code> Redefine a senha do usuário. No corpo da requisição, deve se enviar o <code>token, password, password_confirmation</code></li>
+
+<li><code>GET /profile</code> Exibe os dados do perfil do usuário <strong>logado</strong></li>
+
+<li><code>PUT /profile</code> Atualiza o perfil do usuário. No corpo da requisição deve-se enviar os campos <code>name, status, phone, birthdate, old_password, password, password_confirmation</code></li>
+
+<li><code>GET /users/followers/:user_id</code> Lista todos os seguidores do usuário informado no parâmetro da requisição (campo <code>user_id</code>)</li>
+
+<hr>
+
 <a href="https://linkedin.com/in/danilo-de-souza-ferreira">
   <h3>
     Acesse meu LinkedIn
